@@ -16,11 +16,6 @@ The original analysis code, with personal identifiers replaced and all saved out
 
 ## Interpretation and limitations
 
-The analysis describes transaction activity in the supplied wallet and savings statements. Incoming transfers do not necessarily represent earned income, and outgoing transfers do not necessarily represent spending: transfers between an account holder's own accounts can appear on both sides.
+Incoming transfers are not necessarily earned income, and outgoing transfers are not necessarily consumption. Self-transfer and savings-transfer detection uses description rules and requires manual review. Early exploratory credit totals include movements that later sections attempt to filter. Missing-value and debit/credit conventions depend on the statement format. This notebook is exploratory work, not a validated financial reporting system or investment strategy.
 
-- **Classification requires review.** Self-transfers and savings transfers are identified using rules based on transaction descriptions. Incomplete or ambiguous descriptions can lead to incorrect classifications.
-- **Totals depend on the analysis stage.** Early exploratory credit totals include account movements that later sections attempt to filter. These totals should not be interpreted as confirmed income or compared with filtered summaries without accounting for that difference.
-- **Statement formats affect the results.** Missing values and debit/credit conventions depend on the source workbook. The cleaning assumptions may need adjustment for statements from other providers.
-- **The public version demonstrates the method.** Personal identifiers have been replaced and saved outputs removed. Real transaction records, balances and account statements are not included, so this repository does not present financial findings that readers can independently verify.
-
-This notebook is an exploratory portfolio project, not a validated financial reporting system or an investment strategy.
+Keep your workbook, exports, and executed notebook outputs private. Clear outputs before publishing a rerun.
